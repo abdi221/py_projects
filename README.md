@@ -183,6 +183,14 @@ Your 1-hour documentation block should be a `notes.md` file per project. Write: 
 - Save the score to a text file and load it next time
 
 ---
+## 📅 Weekly Structure (Repeat Every Week)
+
+| Day | Focus |
+|-----|-------|
+| Mon–Fri | Build, experiment, document |
+| Saturday | Review the week. Refactor one old project. Fix bad habits. |
+| Sunday | Explore one concept deeper (a YouTube video, a docs page, a chapter) |
+---
 
 ## WEEK 2 — Logic-Heavy Games + OOP Foundations
 
@@ -328,6 +336,14 @@ Your 1-hour documentation block should be a `notes.md` file per project. Write: 
 - Build a Pomodoro timer (25 min work, 5 min break, repeat)
 
 ---
+## 📅 Weekly Structure (Repeat Every Week)
+
+| Day | Focus |
+|-----|-------|
+| Mon–Fri | Build, experiment, document |
+| Saturday | Review the week. Refactor one old project. Fix bad habits. |
+| Sunday | Explore one concept deeper (a YouTube video, a docs page, a chapter) |
+---
 
 ## WEEK 3 — File I/O, External Libraries, String Manipulation
 
@@ -433,6 +449,14 @@ Your 1-hour documentation block should be a `notes.md` file per project. Write: 
 
 > Before this week: understand what an API is. Watch a 10-minute video: "What is a REST API explained for beginners." Know what HTTP status codes are (200 = OK, 404 = not found, 401 = unauthorised).
 
+---
+## 📅 Weekly Structure (Repeat Every Week)
+
+| Day | Focus |
+|-----|-------|
+| Mon–Fri | Build, experiment, document |
+| Saturday | Review the week. Refactor one old project. Fix bad habits. |
+| Sunday | Explore one concept deeper (a YouTube video, a docs page, a chapter) |
 ---
 
 ### Project 13 — Pokémon Training Game
