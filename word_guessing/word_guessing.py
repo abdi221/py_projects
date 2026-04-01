@@ -1,29 +1,14 @@
-from random import choice
-#list = ["hello", "welcome", "random", "file", "print", "tracking", "word", "tasks", "concepts", "core"]
+# document: created 10 animals from a list and printed one randomly
+# Then I created a loop which would take a random animal from my list and printing each letter one at a time
+import random
+list = ['elephant', 'tiger', 'axolotl', 'platypus', 'blue whale', 'penguin', 'pangolin', 'narwhal', 'honey badger', 'glass frog']
+l = ['elephant', 'tiger', 'axolotl']
+# print(*random.choice(l)) 
 
-# word = choice(list)
-# count = 0
-# print("You got 10 tries\n")
-# for letter in range(len(word.lower())):
-#     user = input("Guess the first letter of the word: ")
-#     if user.lower() == letter:
-#         print(letter, end="")
-#     else:
-#         print("_", end="")
-#     count += 1
-#     if count == 10:
-#         print("Game Over. You Lost")
-
-# print()
-#problem: the iterator is jumping over a letter if not guessed correctly within the sequence
-word = 'apple'
-lists = []
-for i in word:
-    user = input("Guess a letter: ")
-    if user in word:
-        print(f"Yes the letter {user} is in the word.")
-        lists.append(i)
+# NOTE: for later remeber to maybe use sample() for unique non duplicate values..
+for letter in l: # now i can see that by using the 'in' keyword, i can search for single letter in the word
+    print(letter)
+    if "a" in letter:
+        print("Yes")
     else:
-        print(f"No the letter {user} is not in the word")
-
-print(lists)
+        print("No")
