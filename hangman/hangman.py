@@ -1,14 +1,78 @@
 import random
-txt = '''apple banana mango strawberry 
-orange grape pineapple apricot lemon coconut watermelon 
-cherry papaya berry peach lychee muskmelon'''
+list = ['Elephant', 'Tiger', 'Axolotl', 'Platypus', 'Blue Whale', 'Penguin', 'Pangolin', 'Narwhal', 'Honey Badger', 'Glass Frog']
 
+random_word = random.choice(list).lower()
+# print(random_word)
+# user = input("Guess a letter: ")
+# mylist = []
+# for i, v in enumerate(random_word.replace(" ", ""), start=1):
+#     if user == v:
+#         mylist.append(*v)
 
-user = input("Guess letter: ")
-t = 'a b c'.split()
-for letter in t:
-    if user == letter:
-        print(letter, end=" ")
+#     else:
+#         mylist.append("_")
+# print(" ".join(mylist))
+
+def someword(word):
+    thelist = []
+    random_word = random.choice(list).lower()
+    if word in random_word:
+        return thelist.append(word)
     else:
-        print("_", end=" ")
-print()
+        thelist.append("_")
+user = input("Guess a letter")
+print(someword(user))
+
+
+hangmanpics = ['''
+  +---+
+  |   |
+      |
+      |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+      |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+  |   |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+ /|   |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+ /|\  |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+ /|\  |
+ /    |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+ /|\  |
+ / \  |
+      |
+=========''']
+
+
