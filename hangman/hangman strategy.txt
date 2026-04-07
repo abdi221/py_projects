@@ -1,0 +1,18 @@
+hangman strategy
+
+
+while the whole word has not been guessed correctly: 
+	print out the lines: _ _ _ _
+	attempts are being recorded
+	every time a guess is correct: _ p _ a _ h
+	if the guess is false:
+		display one hangman pic
+	
+while guesses are < hangman pics + 1
+if the user guesses the word correctly before the all hangman pics are displayed == user wins, break
+else print user lose....break
+
+
+	
+
+

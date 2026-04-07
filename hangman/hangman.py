@@ -2,71 +2,70 @@ import random
 list = ['Elephant', 'Tiger', 'Axolotl', 'Platypus', 'Blue Whale', 'Penguin', 'Pangolin', 'Narwhal', 'Honey Badger', 'Glass Frog']
 
 random_word = random.choice(list).lower()
-# print(random_word)
-# user = input("Guess a letter: ")
-# mylist = []
-# for i, v in enumerate(random_word.replace(" ", ""), start=1):
-#     if user == v:
-#         mylist.append(*v)
-
-#     else:
-#         mylist.append("_")
-# print(" ".join(mylist))
+print(random_word)
 
 def someword(word):
-    thelist = []
-    random_word = random.choice(list).lower()
-    if word in random_word:
-        return thelist.append(word)
-    else:
-        thelist.append("_")
-user = input("Guess a letter")
-print(someword(user))
+  mylist = []
+  for i, v in enumerate(random_word.replace(" ", ""), start=1):
+      print("_" * i) # hopefully this would print _ _ _ at the start of the program
+      if word == v:
+        mylist.append(*word)
+      else:
+        shieet = i * "_"
+        mylist.append(shieet)
+  return " ".join(mylist)
 
 
-hangmanpics = ['''
+guess = 0 #ei amount of tries
+all_guessed_words = {} #set because its smarter and it doesnt care about the order
+while all_guessed_words != len(random_word):
+   user = input("Guess a letter")
+   all_guessed_words.add(user)
+   someword(user)
+   break
+hangmanpics = [r''' #adding r tells the interpreter to look at the figures as they are seen and not new lines
   +---+
   |   |
       |
       |
       |
       |
-=========''', '''
+=========''', r'''
   +---+
   |   |
   O   |
       |
       |
       |
-=========''', '''
+=========''', r'''
   +---+
   |   |
   O   |
   |   |
       |
       |
-=========''', '''
+=========''', r'''
   +---+
   |   |
   O   |
  /|   |
       |
       |
-=========''', '''
+=========''', r'''
   +---+
   |   |
   O   |
  /|\  |
       |
       |
-=========''', '''
+=========''', r'''
   +---+
   |   |
   O   |
  /|\  |
  /    |
       |
-=========''', '''
+=========''', r'''
   +---+
   |   |
   O   |
@@ -74,5 +73,3 @@ hangmanpics = ['''
  / \  |
       |
 =========''']
-
-
